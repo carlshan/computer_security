@@ -64,6 +64,14 @@ def gcd(a, b):
         a, b = b, a % b
     return a
 
+def xor(a, b):
+    new = []
+    for x, y in zip(a, b):
+        if int(x) + int(y) == 1:
+            new.append('1')
+        else:
+            new.append('0')
+    return ''.join(new)
 
 class PublicKey:
 
